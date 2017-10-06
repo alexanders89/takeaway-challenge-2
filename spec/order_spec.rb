@@ -13,8 +13,8 @@ describe Order do
   end
 
   it 'can add the value of the basket' do
-    order.add('Chicken', 5, 1)
-    order.add('Beef', 4, 2)
-    expect(order.sum_basket).to eq 13
+    order.add('Chicken', 5.23, 1)
+    order.add('Beef', 4.76, 2)
+    expect(order.sum_basket).to eq 14.75
   end
 end
