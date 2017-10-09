@@ -6,12 +6,15 @@ describe Takeaway do
 
 
   it 'has a menu' do
-    takeaway = Takeaway.new
     expect(takeaway).to respond_to :menu
   end
 
   it 'menu contains items and prices' do
-    takeaway = Takeaway.new
     expect(takeaway.view_menu).to eq('Chicken: £4, Beef: £3, Quail: £8')
+  end
+
+  it 'can create an order' do
+    expect{ takeaway.create_order }.not_to raise_error
+
   end
 end

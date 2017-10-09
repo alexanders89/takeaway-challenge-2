@@ -7,6 +7,10 @@ describe Order do
     expect(order.basket.count).to eq 0
   end
 
+  it 'is initialized with an order number' do
+    expect(order.order_id).to eq 7357
+  end
+
   it 'can have items added to it' do
     order.add('Chicken', 5, 1)
     expect(order.basket[0]).to eq ['Chicken', 5, 1, 5]

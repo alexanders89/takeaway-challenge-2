@@ -11,3 +11,4 @@ gem 'simplecov-console', require: false, group: :test
 gem 'twilio'
 gem 'twilio-ruby'
 gem 'dotenv'
+gem 'colored'
