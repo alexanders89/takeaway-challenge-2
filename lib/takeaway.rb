@@ -9,7 +9,7 @@ class Takeaway
   end
 
   def view_menu
-    'Chicken: £4, Beef: £3, Quail: £8'
+    'Chicken: £4, Beef: £3, Quail: £8, Lobster: £20'
   end
 
   def create_order
